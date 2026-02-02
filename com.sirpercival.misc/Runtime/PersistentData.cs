@@ -1,5 +1,3 @@
-using SharedLibrary.Dtos.Campaigns;
-using SharedLibrary.Dtos.Characters;
 using UnityEngine;
 
 public static class PersistentData

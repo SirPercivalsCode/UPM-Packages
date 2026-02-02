@@ -2,8 +2,6 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-
-// Most code and idea taken from https://youtu.be/za_pBB80Nt8
 public class Developer
 {
     //* -----------------------GAME----------------------------
@@ -15,7 +13,7 @@ public class Developer
         PlayerPrefs.DeleteAll();
         // Clear serialized Saves
 
-        Logger.Instance.Log("All saves have been cleared.", null, LoggerClass.System);
+        Debug.Log("All saves have been cleared.");
     }
 
 
@@ -24,7 +22,7 @@ public class Developer
     {
         // Give player money or smth
 
-        Logger.Instance.Log("Money given to player.", null, LoggerClass.System);
+        Debug.Log("Money given to player.");
     }
 
 
@@ -58,7 +56,7 @@ public class Developer
             {
                 if (component == null)
                 {
-                    Logger.Instance.Log("GameObject found with missing script " + go.name, null, LoggerClass.System);
+                    Debug.Log($"GameObject found with missing script {go.name}");
                     break;
                 }
             }

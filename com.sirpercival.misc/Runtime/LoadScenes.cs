@@ -24,7 +24,11 @@ public class LoadScenes : MonoBehaviour
     // for buttons
     public void GoToMainMenu() => GoTo(SceneTitle.MainMenu);
 
-    public void GoToScene(SceneTitle scene) => scene == SceneTitle.Login ? Logout() : SceneManager.LoadScene(GetSceneName(scene));
+    public void GoTo(SceneTitle scene)
+    {
+        if (scene == SceneTitle.Login) Logout();
+        else SceneManager.LoadScene(GetSceneName(scene));
+    }
 
     public string GetSceneName(SceneTitle title) => title switch
     {

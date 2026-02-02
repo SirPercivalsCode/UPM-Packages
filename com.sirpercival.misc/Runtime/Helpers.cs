@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +17,7 @@ public static class Helpers
     public static T GetRandom<T>(this List<T> list) => list[Random.Range(0, list.Count)];
     
 
-    public static void LogList(List<T> list, string listName = "")
+    public static void LogList<T>(List<T> list, string listName = "")
     {
         if (list.Count <= 0 || list == null) 
         {
@@ -37,11 +36,6 @@ public static class Helpers
             if(i < list.Count - 1) sb.Append(", ");
         }
         Debug.Log(sb.ToString());
-    }
-
-    public static void LogJson(object json, string title = "")
-    {
-        Debug.Log($"{title}:\n" + JsonConvert.SerializeObject(json, Formatting.Indented));
     }
 
     public static void CycleEnum<T>(ref T enumValue, int increment = 1) where T : struct, System.Enum

@@ -1,5 +1,3 @@
-using SharedLibrary.Dtos.Campaigns;
-using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -79,7 +77,7 @@ public class TagManager : MonoBehaviour
         OnTagsChanged?.Invoke();
     }
 
-    public void LoadIn(List<CampaignTagDto> existingTags) => LoadIn(existingTags?.Select(t => t.TagName.ToLower()).ToList() ?? new List<string>());
+    //public void LoadIn(List<CampaignTagDto> existingTags) => LoadIn(existingTags?.Select(t => t.TagName.ToLower()).ToList() ?? new List<string>());
     
     public void LoadIn(List<string> existingTags)
     {

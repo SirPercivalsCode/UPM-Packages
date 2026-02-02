@@ -1,7 +1,3 @@
-using Sirenix.OdinInspector;
-using System;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,7 +35,7 @@ public class FlexGridLayoutGroup : MonoBehaviour, ILayoutElement
         ArrangeChildren();
     }
 
-    [Button("Arrange Children")]
+    [ContextMenu("Arrange Children")]
     public void ArrangeChildren()
     {
         if (rect == null) rect = GetComponent<RectTransform>();
