@@ -1,0 +1,9 @@
+using System;
+
+    #ROOTNAMESPACEBEGIN#
+public interface #SCRIPTNAME#
+{
+    public int SomeProperty { get; }
+    public void SomeFunction();
+}
+#ROOTNAMESPACEEND#

@@ -1,0 +1,11 @@
+{
+  "name": "com.sirpercival.all",
+  "displayName": "SirPercival's Complete Helpers",
+  "version": "1.0.0",
+  "dependencies": {
+    "com.sirpercival.core": "1.0.0",
+    "com.sirpercival.misc": "1.0.0",
+    "com.sirpercival.ui": "1.0.0",
+    "com.sirpercival.audio": "1.0.0"
+  }
+}

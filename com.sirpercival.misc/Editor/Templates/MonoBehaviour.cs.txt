@@ -1,0 +1,24 @@
+using System.Collections;
+using UnityEngine;
+
+    #ROOTNAMESPACEBEGIN#
+public class #SCRIPTNAME# : MonoBehaviour
+{
+    #NOTRIM#
+    void Awake()
+    {
+        // set up this class, only call other classes in Start()
+	#NOTRIM#
+    }
+    #NOTRIM#
+    void Start()
+    {
+        #NOTRIM#
+    }
+    #NOTRIM#
+    void Update()
+    {
+        #NOTRIM#
+    }
+}
+#ROOTNAMESPACEEND#

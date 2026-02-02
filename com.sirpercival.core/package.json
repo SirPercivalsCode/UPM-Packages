@@ -1,0 +1,10 @@
+{
+  "name": "com.sirpercival.core",
+  "displayName": "SirPercival's Core Scripts",
+  "version": "1.0.0",
+  "unity": "6000.3",
+  "description": "Reusable Scripts without external dependencies. [Singleton, TimeUtils, etc.]",
+  "author": {
+    "name": "SirPercival"
+  }
+}

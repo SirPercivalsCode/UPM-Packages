@@ -1,0 +1,10 @@
+{
+  "name": "com.sirpercival.misc",
+  "displayName": "SirPercival's Misc Helpers",
+  "version": "1.0.0",
+  "unity": "6000.3",
+  "description": "Reusable helpers, editor tools, and script templates",
+  "author": {
+    "name": "SirPercival"
+  }
+}
